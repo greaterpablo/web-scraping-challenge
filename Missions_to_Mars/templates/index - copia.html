@@ -26,15 +26,15 @@
           </div>
           
           <hr>
-          <h2><strong>{{mars_info.news[0]['title']}}</h2>
-          <h3>{{mars_info.news[0]['paragraph']}}</h3>
+          <h2><strong>{{ dictionary_read.News }}</strong></h2>
+          <h3>{{ mars.paragraph }}</h3>
         </div>  
 
       </div>
 
 
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-8">
       <div class="bd-example">
         <div id="carouselExampleCaptions1" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
@@ -49,7 +49,7 @@
             </div>
             {% for image in mars_dict.Images %}
             <div class="carousel-item">
-              <img src="{{mars_info.feature_img}}" class="d-block w-100" alt="...">
+              <img src="{{image}}" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
               </div>
             </div>
@@ -63,13 +63,11 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
           </a>
-        </div>
-      </div>
-
-   
-        <div class="col-md-6">
+         
+      
           <h2 style="font-weight: 700; font-size: 2em;">Mars Facts</h2>
-          <table class="table table-blue table-striped table-hover">
+          <div class="table-responsive"></div>
+          <table class="table table-dark table-striped">
               <thead class="table-dark">
                 <tr style="text-align: left;">
                   <th>Description</th>
@@ -113,43 +111,44 @@
         </div>
       </div>
 
-      <div>
-        <br>
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+          <H2 style="text-align: center;">Hemispheres</H2>
+        </div>
       </div>
-
-
       
 
       <div class="row mt-3 hemispheres">
           <div class="col-lg-3 px-2">
             <div class="card">
-              <img src="{{mars_info.hemisphere_imgs[0]['Image URL']}}" class="card-img-top" alt="Cerberus">
+              <img src="https://marshemispheres.com/images/full.jpg" class="card-img-top" alt="Cerberus">
               <div class="card-body">
-                <p class="card-text">{{mars_info.hemisphere_imgs[0]['Title']}}</p>
+                <p class="card-text">Cerberus Hemisphere</p>
               </div>
             </div>
           </div>
           <div class="col-lg-3 px-2">
             <div class="card">
-              <img src="{{mars_info.hemisphere_imgs[1]['Image URL']}}" class="card-img-top" alt="Cerberus">
+              <img src="https://marshemispheres.com/images/schiaparelli_enhanced-full.jpg" class="card-img-top" alt="Cerberus">
               <div class="card-body">
-                <p class="card-text">{{mars_info.hemisphere_imgs[1]['Title']}}</p>
+                <p class="card-text">Schiaparelli Hemisphere</p>
               </div>
             </div>
           </div>
           <div class="col-lg-3 px-2">
             <div class="card">
-              <img src="{{mars_info.hemisphere_imgs[2]['Image URL']}}" class="card-img-top" alt="Cerberus">
+              <img src="https://marshemispheres.com/images/syrtis_major_enhanced-full.jpg" class="card-img-top" alt="Cerberus">
               <div class="card-body">
-                <p class="card-text">{{mars_info.hemisphere_imgs[2]['Title']}}</p>
+                <p class="card-text">Syrtis Major Hemisphere</p>
               </div>
             </div>
           </div>
           <div class="col-lg-3 px-2">
             <div class="card">
-              <img src="{{mars_info.hemisphere_imgs[3]['Image URL']}}" class="card-img-top" alt="Cerberus">
+              <img src="https://marshemispheres.com/images/valles_marineris_enhanced-full.jpg" class="card-img-top" alt="Cerberus">
               <div class="card-body">
-                <p class="card-text">{{mars_info.hemisphere_imgs[3]['Title']}}</p>
+                <p class="card-text">Valles Marineris Hemisphere</p>
               </div>
             </div>
           </div>   
